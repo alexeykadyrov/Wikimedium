@@ -3,5 +3,7 @@
 @import "basics.css";
 @import "menubar.css";
 @import "sidebar.css";
+@import "footer.css";
 @import "post.css";
 @import "posts.css";
+@import "landing.css";
