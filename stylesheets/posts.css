@@ -1,1 +1,77 @@
-body.posts {    display: flex;    justify-content: center;    padding: 100px 0 50px;    background: #FAFAFA;}.post-teaser {    display: block;    width: 740px;    padding: 20px 20px 30px;    text-decoration: none;    background: #FFFFFF;    border-radius: 8px;    border: 1px solid rgba(0, 0, 0, 0.1);    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);    transition: box-shadow 0.3s ease;}.post-teaser:hover {    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);}.post-teaser:not(:first-child) {    margin-top: 20px;}.post-teaser figure {    height: 200px;    background-position: center;    background-size: cover;}.post-teaser h2 {    margin-top: 30px;    font-family: 'PT Sans Caption', sans-serif;    font-weight: 700;    font-size: 28px;    line-height: 34px;    color: rgba(0, 0, 0, 0.8);}.post-teaser h2:first-child {    margin-top: 0;}.post-teaser p {    margin-top: 8px;    font-weight: 400;    font-size: 22px;    line-height: 32px;    color: rgba(0, 0, 0, 0.4);}@media (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {    body.posts {        padding: 120px 0;        background: none;    }    body.posts > section {        width: calc(100% - 20px);    }    .post-teaser {        width: 100%;        padding: 0;        border-radius: 0;        border: 0;        box-shadow: none;    }    .post-teaser figure {        width: calc(100vw - 20px);        height: calc(100vw - 20px);    }}
+body.posts {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 50px;
+    background: #FAFAFA;
+}
+
+.post-teaser {
+    display: block;
+    width: 740px;
+    padding: 20px 20px 30px;
+    text-decoration: none;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.post-teaser:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.post-teaser:not(:first-child) {
+    margin-top: 20px;
+}
+
+.post-teaser figure {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+}
+
+.post-teaser h2 {
+    margin-top: 30px;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.post-teaser h2:first-child {
+    margin-top: 0;
+}
+
+.post-teaser p {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+@media (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
+    body.posts {
+        padding: 120px 0;
+        background: none;
+    }
+
+    body.posts > section {
+        width: calc(100% - 20px);
+    }
+
+    .post-teaser {
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+        border: 0;
+        box-shadow: none;
+    }
+
+    .post-teaser figure {
+        width: calc(100vw - 20px);
+        height: calc(100vw - 20px);
+    }
+}
